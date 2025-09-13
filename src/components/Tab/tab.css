@@ -1,0 +1,25 @@
+.tab-header > .active {
+  border-bottom: 3px solid var(--color-default);
+}
+.tab-header > button:active {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.tab-header > .wd-1 {
+  width: calc(100%);
+}
+.tab-header > .wd-2 {
+  width: calc(100% / 2);
+}
+.tab-header > .wd-3 {
+  width: calc(100% / 3);
+}
+.tab-header > .wd-4 {
+  width: calc(100% / 4);
+}
+.tab-header > .wd-5 {
+  width: calc(100% / 5);
+}
+.tab-header > .wd-6 {
+  width: calc(100% / 6);
+}

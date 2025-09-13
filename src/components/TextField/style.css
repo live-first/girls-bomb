@@ -1,0 +1,6 @@
+.input-text-md {
+  font-size: medium;
+}
+.input-text-md:focus {
+  border-color: var(--color-sekigahara);
+}
