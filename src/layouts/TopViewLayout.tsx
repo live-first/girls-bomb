@@ -1,8 +1,6 @@
 'use client'
 
 import { ReactNode } from 'react'
-import './style.css'
-// import { Img } from '../components/image'
 
 export type LayoutProps = {
   top?: ReactNode
@@ -28,7 +26,7 @@ export const TopViewLayout = (props: LayoutProps) => {
             <div className='mt-[100vh] bg-stripe'>{main}</div>
           </div>
         ) : (
-          <div className='bg-stripe'>{main}</div>
+          <div className='flex flex-col'>{main}</div>
         )}
       </main>
       {footer}

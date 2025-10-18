@@ -27,7 +27,7 @@ export const HeaderView = ({ url }: { url?: string }) => {
     return (
       <button
         className={cn(
-          'flex flex-col h-full font-bold  hover:text-[#ca9b52] p-1 text-krf-pink text-shadow-lg whitespace-nowrap',
+          'flex flex-col h-full font-bold  hover:text-[#ca9b52] py-1 px-4 text-krf-pink text-shadow-lg whitespace-nowrap',
           active ? 'text-[#ca9b52]' : 'hover:cursor-pointer',
           isBorder ? 'border-r border-white' : '',
         )}
@@ -60,30 +60,26 @@ export const HeaderView = ({ url }: { url?: string }) => {
     <Header
       logoArea={<Logo />}
       pcView={
-        <div className='flex py-1 gap-3 pl-12 pr-3 rounded-l-full'>
-          <HeaderPcCell label='PROFILE' url='/about' active={url === 'about'} isBorder />
-          <HeaderPcCell label='MEMBER' url='/ticket' active={url === 'ticket'} isBorder />
-          <HeaderPcCell label='MUSIC' url='/lineup' active={url === 'lineup'} isBorder />
+        <div className='flex py-1 pl-12 pr-3 rounded-l-full'>
+          <HeaderPcCell label='HOME' url='/' active={url === 'home'} isBorder />
           <HeaderPcCell
-            label='タイムテーブル'
-            url='/timetable'
-            active={url === 'timetable'}
+            label='GROUP PROFILE'
+            url='/group-profile'
+            active={url === 'group-profile'}
             isBorder
           />
-          <HeaderPcCell label='CONTACT' url='/access' active={url === 'access'} />
+          <HeaderPcCell label='MEMBER' url='/member' active={url === 'member'} isBorder />
+          <HeaderPcCell label='MUSIC' url='/music' active={url === 'music'} isBorder />
+          <HeaderPcCell label='CONTACT' url='/contact' active={url === 'contact'} />
         </div>
       }
       spView={
         <div className='flex flex-col gap-6 pt-16 px-4'>
-          <HeaderSpCell label='クロフェス' url='/about' />
-          <HeaderSpCell label='チケット' url='/ticket' />
-          <HeaderSpCell label='アーティスト' url='/lineup' />
-          <HeaderSpCell label='タイムテーブル' url='/timetable' />
-          <HeaderSpCell label='アクセス' url='/access' />
-          <div className='flex gap-2 sm:gap-6 px-1 sm:px-6'></div>
-          <div className='flex w-[150px] self-center'>
-            <Img src='https://kurofes-dashin.com/pictures/kurofes-logo.png' alt='クロフェスロゴ' />
-          </div>
+          <HeaderSpCell label='HOME' url='home' />
+          <HeaderSpCell label='GROUP PROFILE' url='/group-profile' />
+          <HeaderSpCell label='MEMBER' url='/member' />
+          <HeaderSpCell label='MUSIC' url='/music' />
+          <HeaderSpCell label='CONTACT' url='/contact' />
         </div>
       }
     />

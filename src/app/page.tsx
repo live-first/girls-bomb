@@ -7,7 +7,7 @@ import { TopHeaderView } from '@/views/topHeaderView'
 export default function Home() {
   return (
     <TopViewLayout
-      header={<HeaderView />}
+      header={<HeaderView url='home' />}
       top={<TopHeaderView />}
       main={<HomeView />}
       footer={<FooterView />}
