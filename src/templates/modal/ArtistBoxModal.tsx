@@ -1,4 +1,4 @@
-import { ArtistType } from '@/domain/artist.js'
+import { ArtistType } from '@/domain/artist'
 import { ArtistModal } from '../artistModal/artistModal'
 import { ArtistBox } from '../artistBox'
 import { Modal } from '@/components/Modal'
