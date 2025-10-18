@@ -6,7 +6,7 @@ export const HomeView = () => {
     return <div className='flex flex-col w-full gap-2 items-center'>{children}</div>
   }
   return (
-    <div className='flex flex-col gap-12 pt-8 justify-center pb-80 px-1 md:px-6 bg-black'>
+    <div className='flex flex-col gap-12 py-8 justify-center px-1 md:px-6 bg-black'>
       <Section>
         <Heading tag={2} label='Schedule' />
         <iframe
