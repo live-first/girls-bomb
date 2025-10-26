@@ -1,5 +1,4 @@
-import { ImgProps } from '../Image'
-import { ImageContainer } from '../ImageContainer'
+import { Img, ImgProps } from '../Image'
 
 type CardProps = {
   date: string
@@ -11,18 +10,12 @@ type CardProps = {
 export const Card = (props: CardProps) => {
   const { date, title, src, alt, hideImage = false } = props
   return (
-    <div className='flex flex-col pb-1 bg-blue-100 shadow-xl hover:-translate-y-1'>
+    <div className='flex flex-col pb-1 border-1 rounded-3xl shadow-xl hover:-translate-y-1'>
       {hideImage ? (
         <></>
       ) : (
         <div className='w-full h-[200px]'>
-          <ImageContainer
-            img={{
-              src: src ?? '',
-              alt: alt ?? 'kurofes-logo',
-            }}
-            height='200px'
-          />
+          <Img src={src ?? ''} alt={alt} cName='' />
         </div>
       )}
       <div className='flex flex-col h-[55px] px-1'>

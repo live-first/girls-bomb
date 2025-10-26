@@ -12,10 +12,10 @@ export const NewsDetailView = (props: { id: string | number }) => {
 
   if (news) {
     return (
-      <div className='flex flex-col bg-white py-12 px-6'>
-        <div className='text-4xl font-bold border-b-2 border-gray-400'>{news.title}</div>
-        <div className='py-2'>公開日：{news.date}</div>
-        <div className='flex flex-col py-12'>
+      <div className='flex flex-col py-12 px-6'>
+        <div className='py-6'>公開日：{news.date}</div>
+        <div className='text-4xl font-bold border-b-2 pb-4 border-gray-400'>{news.title}</div>
+        <div className='flex flex-col py-24'>
           {news.context.map((text, index) => {
             return text ? <div key={index}>{text}</div> : <br key={index} />
           })}
@@ -40,7 +40,7 @@ export const NewsDetailView = (props: { id: string | number }) => {
           </div>
         </div>
         <div className='py-12'>
-          <Link href='/news' className='text-fuchsia-400 hover:text-amber-300'>
+          <Link href='/news' className='text-white'>
             ＜ ニュース一覧に戻る
           </Link>
         </div>

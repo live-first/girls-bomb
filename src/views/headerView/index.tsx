@@ -69,7 +69,7 @@ export const HeaderView = ({ url }: { url?: string }) => {
             isBorder
           />
           <HeaderPcCell label='MEMBER' url='/member' active={url === 'member'} isBorder />
-          <HeaderPcCell label='MUSIC' url='/music' active={url === 'music'} isBorder />
+          <HeaderPcCell label='VIDEO' url='/video' active={url === 'music'} isBorder />
           <HeaderPcCell label='CONTACT' url='/contact' active={url === 'contact'} />
         </div>
       }
@@ -78,7 +78,7 @@ export const HeaderView = ({ url }: { url?: string }) => {
           <HeaderSpCell label='HOME' url='home' />
           <HeaderSpCell label='GROUP PROFILE' url='/group-profile' />
           <HeaderSpCell label='MEMBER' url='/member' />
-          <HeaderSpCell label='MUSIC' url='/music' />
+          <HeaderSpCell label='VIDEO' url='/video' />
           <HeaderSpCell label='CONTACT' url='/contact' />
         </div>
       }

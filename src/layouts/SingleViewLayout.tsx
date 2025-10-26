@@ -1,5 +1,6 @@
 'use client'
 
+import { Container } from '@mui/material'
 import { ReactNode } from 'react'
 
 export type LayoutProps = {
@@ -17,7 +18,7 @@ export const SingleViewLayout = (props: LayoutProps) => {
       <header className='fixed w-full h-16 z-50'>{header}</header>
       <main className='min-h-[900px] flex flex-col bg-gradient '>
         <div className='h-16'></div>
-        {main}
+        <Container maxWidth='lg'>{main}</Container>
         {allView}
       </main>
       {footer}

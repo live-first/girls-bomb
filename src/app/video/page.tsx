@@ -4,6 +4,6 @@ import { HeaderView } from '@/views/headerView'
 
 export default function Music() {
   return (
-    <SingleViewLayout header={<HeaderView url='music' />} main={<></>} footer={<FooterView />} />
+    <SingleViewLayout header={<HeaderView url='video' />} main={<></>} footer={<FooterView />} />
   )
 }
