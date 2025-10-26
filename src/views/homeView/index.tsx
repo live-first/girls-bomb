@@ -23,11 +23,17 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { Img } from '@/components/Image'
 import { Container } from '@mui/material'
+import SlideUpAnimation from '@/components/animation/slideUpAnimation'
 
 export const HomeView = () => {
   const Section = ({ children }: PropsWithChildren) => {
-    return <div className='flex flex-col w-full gap-2 items-center'>{children}</div>
+    return (
+      <SlideUpAnimation>
+        <div className='flex flex-col w-full gap-2 items-center'>{children}</div>
+      </SlideUpAnimation>
+    )
   }
+
   return (
     <div className='flex flex-col gap-32 py-8 justify-center px-1 md:px-6 bg-black'>
       <Section>
