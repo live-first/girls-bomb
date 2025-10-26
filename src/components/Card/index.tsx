@@ -17,13 +17,13 @@ export const Card = (props: CardProps) => {
         <></>
       ) : (
         <div className='w-full h-[200px]'>
-          {/* <ImageContainer
+          <ImageContainer
             img={{
               src: src ?? topImage.src,
               alt: alt ?? 'ワンダーウィード 天',
             }}
             height='200px'
-          /> */}
+          />
         </div>
       )}
       <div className='flex flex-col h-[55px] px-1'>
