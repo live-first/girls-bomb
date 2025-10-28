@@ -102,25 +102,39 @@ export const HomeView = () => {
             }}
           >
             <SwiperSlide>
-              <Img src={shirakawa_yumeka.src} alt='白川ゆめか' />
+              <Link href='/member#白川ゆめか'>
+                <Img src={shirakawa_yumeka.src} alt='白川ゆめか' />
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Img src={shinonome_shiori.src} alt='東雲しおり' />
+              <Link href='/member#東雲しおり'>
+                <Img src={shinonome_shiori.src} alt='東雲しおり' />
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Img src={sendo_suzuka.src} alt='千堂すずか' />
+              <Link href='/member#千堂すずか'>
+                <Img src={sendo_suzuka.src} alt='千堂すずか' />
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Img src={kosaka_kurumi.src} alt='神坂くるみ' />
+              <Link href='/member#神坂くるみ'>
+                <Img src={kosaka_kurumi.src} alt='神坂くるみ' />
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Img src={nakajo_airi.src} alt='中條あいり' />
+              <Link href='/member#中條あいり'>
+                <Img src={nakajo_airi.src} alt='中條あいり' />
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Img src={hane_kotomi.src} alt='羽根ことみ' />
+              <Link href='/member#羽根ことみ'>
+                <Img src={hane_kotomi.src} alt='羽根ことみ' />
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Img src={arisu_nanase.src} alt='有栖ななせ' />
+              <Link href='/member#有栖ななせ'>
+                <Img src={arisu_nanase.src} alt='有栖ななせ' />
+              </Link>
             </SwiperSlide>
           </Swiper>
         </div>

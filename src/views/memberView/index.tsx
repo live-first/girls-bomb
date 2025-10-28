@@ -20,7 +20,7 @@ export const MemberView = () => {
       <div className='flex flex-col'>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6'>
           <SlideUpAnimation>
-            <div className='flex flex-col p-1 md:p-3 w-full'>
+            <div className='flex flex-col p-1 md:p-3 w-full' id='白川ゆめか'>
               <Img
                 src={shirakawa_yumeka.src}
                 alt='白川ゆめか'
@@ -50,7 +50,7 @@ export const MemberView = () => {
             </div>
           </SlideUpAnimation>
           <SlideUpAnimation>
-            <div className='flex flex-col p-1 md:p-3 w-full'>
+            <div className='flex flex-col p-1 md:p-3 w-full' id='東雲しおり'>
               <Img
                 src={shinonome_shiori.src}
                 alt='東雲しおり'
@@ -80,7 +80,7 @@ export const MemberView = () => {
             </div>
           </SlideUpAnimation>
           <SlideUpAnimation>
-            <div className='flex flex-col p-1 md:p-3 w-full'>
+            <div className='flex flex-col p-1 md:p-3 w-full' id='千堂すずか'>
               <Img src={sendo_suzuka.src} alt='千堂すずか' cName='duration-700 hover:scale-105' />
               <div className='pt-6 pb-2 text-2xl font-bold'>千堂すずか</div>
               <div>
@@ -106,7 +106,7 @@ export const MemberView = () => {
             </div>
           </SlideUpAnimation>
           <SlideUpAnimation>
-            <div className='flex flex-col p-1 md:p-3 w-full'>
+            <div className='flex flex-col p-1 md:p-3 w-full' id='神坂くるみ'>
               <Img src={kosaka_kurumi.src} alt='神坂くるみ' cName='duration-700 hover:scale-105' />
               <div className='pt-6 pb-2 text-2xl font-bold'>神坂くるみ</div>
               <div>
@@ -132,7 +132,7 @@ export const MemberView = () => {
             </div>
           </SlideUpAnimation>
           <SlideUpAnimation>
-            <div className='flex flex-col p-1 md:p-3 w-full'>
+            <div className='flex flex-col p-1 md:p-3 w-full' id='中條あいり'>
               <Img src={nakajo_airi.src} alt='中條あいり' cName='duration-700 hover:scale-105' />
               <div className='pt-6 pb-2 text-2xl font-bold'>中條あいり</div>
               <div>
@@ -160,7 +160,7 @@ export const MemberView = () => {
             </div>
           </SlideUpAnimation>
           <SlideUpAnimation>
-            <div className='flex flex-col p-1 md:p-3 w-full'>
+            <div className='flex flex-col p-1 md:p-3 w-full' id='羽根ことみ'>
               <Img src={hane_kotomi.src} alt='羽根ことみ' cName='duration-700 hover:scale-105' />
               <div className='pt-6 pb-2 text-2xl font-bold'>羽根ことみ</div>
               <div>
@@ -188,7 +188,7 @@ export const MemberView = () => {
             </div>
           </SlideUpAnimation>
           <SlideUpAnimation>
-            <div className='flex flex-col p-1 md:p-3 w-full'>
+            <div className='flex flex-col p-1 md:p-3 w-full' id='有栖ななせ'>
               <Img src={arisu_nanase.src} alt='有栖ななせ' cName='duration-700 hover:scale-105' />
               <div className='pt-6 pb-2 text-2xl font-bold'>有栖ななせ</div>
               <div>
