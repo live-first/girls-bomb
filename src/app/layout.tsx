@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Head from 'next/head'
-import top from '@/image/ワンダーウィード天.jpg'
 
 export const metadata: Metadata = {
   title: 'ワンダーウィード 天',
@@ -14,13 +12,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <>
-      <Head>
-        <meta property='og:image' content={top.src} />
-      </Head>
-      <html>
-        <body>{children}</body>
-      </html>
-    </>
+    <html>
+      <body>{children}</body>
+    </html>
   )
 }
