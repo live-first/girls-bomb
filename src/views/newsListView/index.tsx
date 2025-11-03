@@ -5,7 +5,7 @@ export const NewsListView = () => {
   return (
     <div className='flex flex-col gap-12 pt-8 justify-center items-center pb-40 px-1 md:px-6 bg-black'>
       <Heading tag={2} label='NEWS' />
-      <NewsList isPagination />
+      <NewsList />
     </div>
   )
 }

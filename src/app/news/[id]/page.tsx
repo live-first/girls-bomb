@@ -6,7 +6,7 @@ import { NewsDetailView } from '@/views/newsDetailView'
 
 export async function generateStaticParams() {
   return newsList.map((news) => ({
-    id: news.id.toString(),
+    id: news.contents.id,
   }))
 }
 
