@@ -15,13 +15,13 @@ export const NewsList = (props: NewsListProps) => {
 
   return (
     <div className='w-full'>
-      <div className='grid grid-cols-2 sm:grid-cols-3 gap-2'>
+      <div className='flex flex-col gap-4'>
         {news?.map((data, index) => {
           return index < max ? (
             <Link href={`/news/${data.id}`} key={index}>
-              <div>
-                <div>{formatDate(data.publishedAt, 'YYYY/MM/DD')}</div>
-                <div>{data.title}</div>
+              <div className='border-b border-white p-4 hover:bg-[#0f0f0f]'>
+                <div>{formatDate(data.publishedAt, 'YYYY / MM / DD')}</div>
+                <div className='text-lg font-bold'>{data.title}</div>
               </div>
             </Link>
           ) : (
