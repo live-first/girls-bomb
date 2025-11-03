@@ -29,7 +29,9 @@ import { NewsContentsType } from '@/domain/news'
 
 export const HomeView = () => {
   const { getNews } = useNewsApi()
-  const news: NewsContentsType[] = getNews.data?.contents ?? []
+  const news: NewsContentsType[] = getNews.data
+    ? (getNews.data.contents as unknown as NewsContentsType[])
+    : []
 
   const Section = ({ children }: PropsWithChildren) => {
     return (

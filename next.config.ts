@@ -2,10 +2,10 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   images: {
-    remotePatterns: [new URL('https://sekigahara.live-first.info/**')],
+    remotePatterns: [new URL('https://wonder-weed.com/**')],
     unoptimized: true,
   },
-  // output: 'export',
+  output: 'export',
   trailingSlash: true,
 }
 

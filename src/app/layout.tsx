@@ -5,6 +5,7 @@ import Provider from './Provider'
 export const metadata: Metadata = {
   title: 'ワンダーウィード 天',
   description: 'アイドルグループ「ワンダーウィード 天」の公式サイトです。',
+  metadataBase: new URL('https://wonderweed-ten.com'),
   openGraph: {
     title: 'ワンダーウィード 天',
     description: 'アイドルグループ「ワンダーウィード 天」の公式サイトです。',
