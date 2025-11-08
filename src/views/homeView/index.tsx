@@ -24,13 +24,13 @@ import 'swiper/css/pagination'
 import { Img } from '@/components/Image'
 import { Container } from '@mui/material'
 import SlideUpAnimation from '@/components/animation/slideUpAnimation'
-import { useNewsApi } from '@/api/newsApi'
 import { NewsContentsType } from '@/domain/news'
+import { useEventsApi } from '@/api/eventsApi'
 
 export const HomeView = () => {
-  const { getNews } = useNewsApi()
-  const news: NewsContentsType[] = getNews.data
-    ? (getNews.data.contents as unknown as NewsContentsType[])
+  const { getEvents } = useEventsApi()
+  const news: NewsContentsType[] = getEvents.data
+    ? (getEvents.data.contents as unknown as NewsContentsType[])
     : []
 
   const Section = ({ children }: PropsWithChildren) => {
