@@ -1,9 +1,8 @@
+import { MetaType } from './meta'
+
 export type NewsType = {
   contents: NewsContentsType[]
-  totalCount: number
-  offset: number
-  limit: number
-}
+} & MetaType
 
 export type NewsContentsType = {
   id: string

@@ -1,20 +1,21 @@
-import z from 'zod'
-import { context, stringArray, title } from './schema'
+import { CategoryType } from './category'
+import { ImgUrlType } from './img'
+import { CommonType, MetaType } from './meta'
+import { PlaceType } from './place'
 
-export const EventSchema = z.object({
-  id: z.number().nullable().optional(),
-  title: title,
-  placeName: z.string(),
-  date: z.string().nullable(),
-  openTime: z.string().nullable(),
-  startTime: z.string().nullable(),
-  img: stringArray.optional(),
-  context: context,
-})
+export type EventsType = {
+  contents: EventContentsType[]
+} & MetaType
 
-export type EventType = z.infer<typeof EventSchema>
-
-export type EventCreateResponseType = {
-  id: number
-  img: string[]
-}
+export type EventContentsType = {
+  title: string
+  categories: CategoryType
+  date: string
+  open: string
+  start: string
+  place: PlaceType[]
+  context: string
+  ticket: string
+  img: ImgUrlType[]
+  publish: string
+} & CommonType

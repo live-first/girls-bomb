@@ -8,7 +8,7 @@ export const useEventsApi = (id?: string) => {
   const getEvents = useQuery({
     queryKey: ['events'],
     queryFn: async () => {
-      return await client.getList<NewsType>({ endpoint: `news` })
+      return await client.getList<NewsType>({ endpoint: 'events' })
     },
   })
 
@@ -17,7 +17,7 @@ export const useEventsApi = (id?: string) => {
   const getDetail = useQuery({
     queryKey: ['events', id],
     queryFn: async () => {
-      return await client.getListDetail<NewsContentsType>({ endpoint: 'news', contentId })
+      return await client.getListDetail<NewsContentsType>({ endpoint: 'events', contentId })
     },
   })
 
