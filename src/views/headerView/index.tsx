@@ -4,7 +4,7 @@ import { Img } from '@/components/Image'
 import { cn } from '@/components/utils'
 import { Header } from '@/templates/header'
 import { useRouter } from 'next/navigation'
-import logo from '@/image/ワンダーウィード天ロゴ.jpg'
+import logo from '@/image/girlsbomb_logo.jpg'
 import x_logo from '@/image/X.svg'
 import tiktok_logo from '@/image/TikTok.svg'
 import youtube_logo from '@/image/Youtube.png'
@@ -30,9 +30,9 @@ export const HeaderView = ({ url }: { url?: string }) => {
     return (
       <button
         className={cn(
-          'flex flex-col h-full font-bold  hover:text-[#ca9b52] py-1 px-4 text-krf-pink text-shadow-lg whitespace-nowrap',
-          active ? 'text-[#ca9b52]' : 'hover:cursor-pointer',
-          isBorder ? 'border-r border-white' : '',
+          'flex flex-col h-full font-bold  hover:text-[#ffc32d] py-1 px-4 text-krf-pink text-shadow-lg whitespace-nowrap',
+          active ? 'text-[#ffc32d]' : 'hover:cursor-pointer',
+          isBorder ? 'border-r border-[#54c200]' : '',
         )}
         onClick={() => router.push(url)}
       >
@@ -60,23 +60,16 @@ export const HeaderView = ({ url }: { url?: string }) => {
       pcView={
         <div className='flex py-1 pl-12 pr-3 rounded-l-full'>
           <HeaderPcCell label='HOME' url='/' active={url === 'home'} isBorder />
-          <HeaderPcCell
-            label='GROUP PROFILE'
-            url='/group-profile'
-            active={url === 'group-profile'}
-            isBorder
-          />
-          <HeaderPcCell label='MEMBER' url='/member' active={url === 'member'} isBorder />
-          <HeaderPcCell label='VIDEO' url='/video' active={url === 'video'} isBorder />
+          <HeaderPcCell label='NEWS' url='/news' active={url === 'news'} isBorder />
+          <HeaderPcCell label='EVENT' url='/events' active={url === 'events'} isBorder />
           <HeaderPcCell label='CONTACT' url='/contact' active={url === 'contact'} />
         </div>
       }
       spView={
         <div className='flex flex-col gap-6 pt-16 px-4'>
           <HeaderSpCell label='HOME' url='/' />
-          <HeaderSpCell label='GROUP PROFILE' url='/group-profile' />
-          <HeaderSpCell label='MEMBER' url='/member' />
-          <HeaderSpCell label='VIDEO' url='/video' />
+          <HeaderSpCell label='NEWS' url='/news' />
+          <HeaderSpCell label='EVENT' url='/events' />
           <HeaderSpCell label='CONTACT' url='/contact' />
           <Img src={logo.src} />
           <div className='flex justify-center content-center gap-12'>

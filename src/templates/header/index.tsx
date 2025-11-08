@@ -29,7 +29,7 @@ export const Header = (props: HeaderProps) => {
   }, [])
 
   return (
-    <div className={cn('flex w-full h-full pl-3 justify-between items-center bg-black')}>
+    <div className={cn('flex w-full h-full pl-3 justify-between items-center')}>
       <Link href='/' className='h-full'>
         {logoArea}
       </Link>
@@ -47,7 +47,7 @@ export const Header = (props: HeaderProps) => {
         <span></span>
       </button>
       {isShow ? (
-        <div className='absolute top-0 left-0 w-dvw h-dvh bg-black md:hidden overflow-scroll pb-4'>
+        <div className='absolute top-0 left-0 w-dvw h-dvh md:hidden overflow-scroll pb-4'>
           {spView}
         </div>
       ) : (
